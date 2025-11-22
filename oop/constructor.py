@@ -6,6 +6,7 @@ class Biodata:
         self.name = name
         self.age = age
         
+    # String representation method
     def __str__(self):
         return f"Biodata(Name: {self.name}, Age: {self.age})"
         
@@ -29,10 +30,17 @@ class Person:
         self.name = name
         self.age = age
         
+    def __eq__(self, value):
+        return self.name == value.name and self.age == value.age
+        
 person = Person("Rina Wijaya", 22)
 print("=== Person Information ===")
 print(f"Name: {person.name}")
 print(f"Age: {person.age}\n")   
+
+person2 = Person("Rina Wijaya", 22)
+print("Are person and person2 equal?", person == person2)  # Testing __eq method
+print()
 
 # Testing invalid age
 # person_invalid = Person("Budi Santoso", 15)  # This will raise a ValueError
