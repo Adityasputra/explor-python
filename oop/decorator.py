@@ -36,34 +36,6 @@ print("="*35)
 
 print()
 
-# Studi Case for Class Method as Factory
-class User:
-    def __init__(self, name, age = 17):
-        self.name = name
-        self.age = age
-        
-    @classmethod
-    def self_registration(cls, value):
-        name, age = value.split(",")
-        age = int(age)
-        
-        if age <= 17:
-            raise ValueError("Registration available for age greater than 17 years")
-        
-        return cls(name, age)
-    
-user1 = User.self_registration("Aditya,20")
-
-width = 20
-print("=" * width)
-print(" Registration ".center(width, "="))
-print("=" * width)
-
-print(f"{'Name':<10}: {user1.name}")
-print(f"{'Age':<10}: {user1.age} years")
-
-print("=" * width)
-
 # Study Case Instance Method
 class Rectangle:
     def __init__(self, s, d):
