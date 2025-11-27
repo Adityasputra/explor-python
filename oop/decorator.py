@@ -36,3 +36,37 @@ print("="*35)
 
 print()
 
+user_json = {
+    "name" : "Aditya Saputra",
+    "age" : 25,
+    "email" : "aditya@example.com"
+}
+
+class User:
+    def __init__(self, name, age, email):
+        self.name = name
+        self.age = age
+        self.email = email
+        
+    @classmethod
+    def from_json(cls, data):
+        if not data:
+            raise ValueError("Data json is empty")
+        
+        return cls(
+            data.get("name"),
+            data.get("age"),
+            data.get("email")
+        )
+        
+user = User.from_json(user_json)
+
+width = 40
+print("=" * width)
+print(" Biodata ".center(width, "="))
+print("=" * width)
+print(f"{'Name':<10}: {user.name}")
+print(f"{'Age':<10}: {user.age} years")
+print(f"{'Email':<10}: {user.email}")
+print("=" * width)
+print()
