@@ -1,6 +1,6 @@
 # explor-python 🐍
 
-Repository pembelajaran Python dengan berbagai contoh program dasar hingga studi kasus. Proyek ini berisi materi lengkap untuk memahami fundamental Python dan penerapannya dalam berbagai situasi.
+Repository pribadi untuk belajar Python dari tingkat pemula hingga advanced. Berisi berbagai contoh program, studi kasus, dan eksperimen-eksperimen yang saya buat sendiri dalam perjalanan memahami Python secara mendalam.
 
 ## 📚 Struktur Repository
 
@@ -100,24 +100,24 @@ print(is_palindrome("Kasur"))    # False
 print(is_palindrome("Katak"))    # True
 ```
 
-## 🤝 Kontribusi
+## 📌 Catatan Penting
 
-Jika ingin menambahkan materi atau memperbaiki code:
-1. Fork repository ini
-2. Buat branch baru (`git checkout -b feature/new-topic`)
-3. Commit perubahan (`git commit -m 'Add new topic'`)
-4. Push ke branch (`git push origin feature/new-topic`)
-5. Buat Pull Request
+Ini adalah repository pembelajaran pribadi yang berisi:
+- **Materi pembelajaran** dari basic hingga advanced
+- **Eksperimen-eksperimen** yang saya buat sendiri
+- **Studi kasus** untuk praktik programming
+- **Dokumentasi** perjalanan belajar Python saya
 
-## 📝 Catatan
+Repository ini terus berkembang seiring dengan progress pembelajaran saya.
 
-- Setiap file memiliki dokumentasi dan komentar yang jelas
-- Program dirancang untuk pembelajaran bertahap
-- Silakan eksplorasi dan modifikasi sesuai kebutuhan
+## 📝 Progress Pembelajaran
 
-## 📧 Kontak
+- ✅ **Basic Python** - Fundamental programming Python
+- ✅ **Case Studies** - Penerapan konsep dalam berbagai kasus
+- ✅ **OOP** - Object-Oriented Programming
+- 🔄 **Advanced Topics** - Sedang dipelajari dan dikembangkan
 
-Jika ada pertanyaan atau saran, silakan buat issue di repository ini.
+Setiap file memiliki dokumentasi dan komentar yang jelas sebagai catatan pembelajaran saya.
 
 ---
 **Happy Learning! 🎓**
