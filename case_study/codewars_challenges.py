@@ -155,7 +155,18 @@ fizz_buzz(15) => ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz",
 
 def fizz_buzz(n):
     # Tulis kode Anda di sini
-    pass
+    result = []
+    for num in range(1, n + 1):
+        if num % 3 == 0 and num % 5 == 0:
+            result.append("FizzBuzz")
+        elif num % 3 == 0:
+            result.append("Fizz")
+        elif num % 5 == 0:
+            result.append("Buzz")
+        else:
+            result.append(str(num))
+    
+    return result
 
 # Test cases
 result = fizz_buzz(15)
