@@ -196,7 +196,25 @@ Contoh:
 
 def is_valid_parentheses(s):
     # Tulis kode Anda di sini
-    pass
+    stack = []
+    mapping = {
+        ")": "(",
+        "}": "{",
+        "]": "["
+    }
+    
+    for char in s:
+        if char in mapping.values():
+            stack.append(char)
+        elif char in mapping.keys():
+            if len(stack) == 0:
+                return False
+            if stack[-1] != mapping[char]:
+                return False
+            else:
+                stack.pop()
+            
+    return len(stack) == 0
 
 # Test cases
 assert is_valid_parentheses("()") == True
